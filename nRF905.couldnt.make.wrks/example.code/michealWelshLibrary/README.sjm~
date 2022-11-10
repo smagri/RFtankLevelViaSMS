@@ -1,0 +1,8 @@
+6may2021
+
+Reference:
+https://mikezplace.com/?p=873
+
+NOTE: article  state 47ohm  and 1kohm  resistors used.   Given voltage
+devider used it  should be 470ohm and 1kohm to  get the 5V->3.4V level
+change required from the arduino uno logic to the nRF905.

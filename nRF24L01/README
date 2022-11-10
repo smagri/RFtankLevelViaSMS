@@ -1,0 +1,27 @@
+20sep2022
+
+This is the working code directory GettingStarted.smagri/ for TX which
+includes  reading distance  sensor.  GettingStarted.smagri.rx/ for  RX
+which just recives distance sensor value.
+
+03oct2022
+Both these  are now rf.smagri.tx and  rf.smagri.rx respectively, ready
+for major  changes to get  to the final  solution of sending  just the
+distance value and then reciving an sms, with no debug messages in the
+code  or the  rx code  will get  confused.  This  works but  make sure
+arduino wifi uno has  dip switch with 1 and 2 bits on.   It may take a
+little while for the sms to get through.
+
+
+10oct2022
+
+Wiring for the nRF20401 from youtube videos:
+
+arduino nRF20401
+13      SCK
+12	MI
+11	MO
+8	CSN
+7	CE
+5V	Vcc
+GND	GND

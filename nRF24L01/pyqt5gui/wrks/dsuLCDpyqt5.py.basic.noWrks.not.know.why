@@ -1,0 +1,273 @@
+#!/usr/bin/env python3
+
+# TO RUN:  enter the  serial port  you are using  on the  command line,
+# argv[1], eg "/dev/ttyUSB".  argv[0] is the program name.
+
+
+import sys
+import serial
+import io
+import time
+
+#imports all the modules you need to create a GUI into the current namespace
+#from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QApplication, QWidget, QTextEdit, QLineEdit
+#from PyQt5.QtGui import QPalette
+
+from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtWidgets import *
+from PyQt5.QtGui import QPalette
+from PyQt5.QtGui import QIcon
+
+# globals
+
+serialPortOpen = "False"
+
+
+# QWidget is the base class of all UI objects in Qt.  Widgets can be
+# nested and this is the outermost/top widget, that is the widget with
+# no parent. Thus this class inherits from the QWidget class.
+class dsuLCDpyqt5(QWidget):
+
+    def __init_(self):
+        # constructor method in python language
+
+        # the super method returns the parent object of this
+        # class and we call its constructor.
+
+        super().__init__()
+                
+        self.initUI()
+
+
+        # # main window title
+        # self.title = "Ultrasonic Distance Sensor with LCD display"
+
+        # # where to position the window in your screen
+        # self.left = 10
+        # self.top = 10
+
+        # # for window geometry
+        # self.width = 640
+        # self.height = 480
+        
+
+    def initUI(self):
+
+                # main window title
+        self.title = "Ultrasonic Distance Sensor with LCD display"
+
+        # where to position the window in your screen
+        self.left = 10
+        self.top = 10
+
+        # for window geometry
+        self.width = 640
+        self.height = 480
+        
+        s# elf.setGeometry(300, 300, 300, 220)
+        # self.setWindowTitle('Icon')
+        # self.setWindowIcon(QIcon('web.png'))
+        
+        self.show()
+                
+        # All these methods have been inherited from the QWidget class. 
+        #self.setwindowtitle(self.title)
+        # QWidget is the base class of the UI in pyqt5???
+        #self = QWidget()
+
+        # set dimensions of widget (pixel,pixel) or (px,px), (width, height)
+        #self.resize(400,400)
+
+        #title = "Ultrasonic Distance Sensor with LCD display" + "\\n"
+        #w.setWindowTitle(title)
+        #w.setWindowTitle("(HC-SRO4 with 1602 LCD)")
+        ##self.setGeometry(self.left,self.top,self.width,self.height)
+
+
+#        labelTitle = QLabel("Ultrasonic Distance Sensor with LCD display", w)
+        #labelPCBdetails = QLabel("(using HCSR04 with 1602LCD)", self)
+        # labelGap = self.QLabel("")
+        # labelGap1 = self.QLabel("")
+        # labelGap2 = self.QLabel("")
+
+        # labelSerialPort = QLabel("Enter Serial Port name, eg: /dev/ttyACM0:")
+        # lineEditSerialPort = QLineEdit("",self)
+        # # lineEditSerialPort.move(200,100)
+        # # lineEditSerialPort.setGeometry(10,10,50,50)
+
+
+        # labelRun = QLabel("TO RUN:  argv[0] \"serial port name, dont forget to quote it\"")
+        # print("TO RUN:  argv[0] \"serial port name, dont forget to quote it\"")
+        # # argv[1], eg "/dev/ttyUSB0".  argv[0] is the program name.
+
+        # labelGap3 = QLabel("")
+        # labelDistance = QLabel("Distance (cm)", self)
+        # #labelDistance.setWordWrap(True)
+        # labelDistance.move(200,200)
+        # textDistance = QTextEdit("",self)
+
+
+
+        # #enteredSerilaPort = QComboBox(w)
+        # #enteredSerilaPort.addItems( ["/dev/ttyACM0", "/dev/ttyACM1", "/dev/ttyUSB0"] )
+
+        # # Put within a standard verticallayoutwidget
+        # vbox = QVBoxLayout(self)
+        # vbox.addWidget(labelTitle)
+        # vbox.addWidget(labelPCBdetails)
+        # vbox.addWidget(labelGap)
+        # vbox.addWidget(labelGap1)
+
+        # vbox.addWidget(labelRun)
+        # vbox.addWidget(labelSerialPort)
+        # vbox.addWidget(lineEditSerialPort)
+
+        # vbox.addWidget(labelGap2)
+        # vbox.addWidget(labelGap3)
+        # vbox.addWidget(labelDistance)
+        # vbox.addWidget(textDistance)
+
+
+        # # FIXME: this does not seem to work for a dark background
+        # # change colours of application gui
+        # #qp = QPalette() # create object of class QPalette, QtGui module
+        # # required
+
+        #  # use QPalette method of QPalette class
+        #  #qp.setColor(QPalette.QTextEdit, Qt.blue)
+        #  #qp.setColor(QPalette.Window, Qt.black)
+
+
+        # # In  GUI based  applications,  functions are  executed  based on  the
+        # # actions  performed by  the user,  like hovering  over an  element or
+        # # clicking a button. These actions  are called events. Recall that the
+        # # app.exec_() method transfers  control to the Qt  event-loop. This is
+        # # what the event  loop is there for: to listen  for events and perform
+        # # actions in response.
+
+        # # Whenever an  event occurs,  like a user  clicking a  button, the
+        # # corresponding Qt  widget raises a  signal. These signals  can be
+        # # connected to  python functions,  any function can  be a  slot in
+        # # python,  so that  the  function  is executed  when  a signal  is
+        # # triggered. These functions are called slots in Qt lingo.
+
+        # # Basic  syntax to  trigger a  slot  function in  response to  the
+        # # signal      from      an      event      is      as      follows
+        # #                   widget.signal.connect(slot)
+        # d = dsuLCDpyqt5()
+        # d.debuggingFn()
+
+        # timer = QTimer() # create a timer object
+        # timer.timeout.connect(lambda:d.timerCbk(textDistance))
+        # timer.start(200) # milliseconds
+
+        # # Hit ENTER to input your serial port name as a string to the program
+        # lineEditSerialPort.returnPressed.connect(lambda:d.debuggingFn())
+        # #lineEditSerialPort.returnPressed.connect(lambda:d.serialPortStringEntered())
+
+        # Display the widget onthe monitor screen.
+
+
+
+    # def timerCbk(self, textDistance):
+
+    #     global serialPort
+    #     global serialPortOpen
+        
+
+    #     # serialPort = serial.Serial('/dev/ttyACM0', 9600, timout=0)#open serial port
+    #     # print(serialPortRead.name) # check which port was really used
+    #     # serialPort.close()
+    #     # readStr = serialPort.readlin() # read a '\n' terminated line
+    #     # print_exc(readStr)
+    #     print("dbg:dsuLCD:timerCbk: in timerCbk")
+
+
+    #     # # open serial port
+    #     # #   lengthReadStr = len(readStr)
+    #     # readStr = []
+    #     # #readStr = lineEditSerialPort.text() # get serialport entered by user
+    #     # readStr = "/dev/ttyUSB0"
+    #     # #print("lineEditText is = " + readStr)
+    #     # #   print(lengthReadStr)
+    #     # #  readStr[0:lengthReadStr-2]
+    #     # #    print(readStr[0:lengthReadStr-2])
+    #     # if readStr == "":
+    #     #     #print("you need to enter serial port name first")
+    #     #     return
+
+    #     # print("readStr is portname:" + readStr)
+    #     # lengthDistanceStr = len(readStr)
+    #     # readStr = readStr[0:lengthDistanceStr-11]
+    #     # readStr = ("\'" + readStr + "\'")
+    #     # print("readStr is" + readStr)
+    #     #serialPort = serial.Serial('/dev/ttyUSB0', 9600, timeout=0)
+
+    #     portNameStr = sys.argv[1] #sys.argv[0] is name of python script
+    #     if (serialPortOpen == "False"):
+    #         print("opening serial port")
+    #         serialPort = serial.Serial(portNameStr, 9600, timeout=0)
+    #         serialPortOpen = "True"
+    #         print("serialPortOpen is " + serialPortOpen)
+    #     #readStr =  ["" for x in  range(15)] # allocate a  string array of
+    #     # siz 15 chars, but shouldn't really  do this in python, use lists
+    #     # instead
+
+    #     # allocate empty array/ie list.  In python list is a wrapper for a
+    #     # real array  which contains references to  items, not necessarily
+    #     # of the same type
+
+
+    #     # Remove \b at  beginning of string and remove \r\nLF  ie CR CR LF
+    #     # LF at  end of string  end of string. This  is a function  of the
+    #     # arduino         sketch         output,        see         sketch
+    #     # distanceSensorUltrasonicLCD.ino.
+    #     readDistanceStr = str( (serialPort.readline()) )
+    #     lengthDistanceStr = len(readDistanceStr)
+    #     distance = readDistanceStr[2:lengthDistanceStr-5]
+
+    #     print("dbg:dsuLCD:timerCbk: lengthReadStr is " + str(lengthDistanceStr))
+    #     print("dbg:dsuLCD:timerCbk: readDistanceStr is " + readDistanceStr)
+    #     print("dbg:dsuLCD:timerCbk: distance is " + distance)
+
+    #     textDistance.setText(distance)
+
+
+    # def debuggingFn(self):
+    #     print("dbg:debuggingFn: calling test fn from dsuLCDpyqt5 class")
+
+
+    # def serialPortStringEntered(self):
+    #     print("inside  serialPortStringEntered()")
+    #     # get text from line
+    #     serialPort = self.lineEditSerialPort.text()
+    #     print("serialPort text entered is: " + serialPort)
+    
+            
+
+def main():
+    # Creating an object of the  QApplication class. Every UI app must
+    # create an  instance of  QApplication, as a  sort of  entry point
+    # into the app. If you do not create it, errors will be shown.
+
+    # sys.argv is  the list  of command-line  parameters that  you can
+    # pass to the  application when launching it through  the shell or
+    # while automating  the interface.  Use app  = QApplication([]) if
+    # no arguments will be passed.
+    app = QApplication(sys.argv)
+    #  set a syle, can be fusion, windows, mac..app.setStyle("Fusion")
+    
+    # Start the Qt/C++ event loop.
+    ex = dsuLCDpyqt5()
+    # note: exec_ is used in instead of exec as this is a python keywoard
+    sys.exit(app.exec_())
+
+    # return from Qt event loop as program dialog/main widget window killed
+#    serialPort.close()    
+
+
+if __name__ == '__main__':
+    main()
+
+

@@ -1,0 +1,33 @@
+11apr2022
+
+Note:  The arduino  uno r3  TX/RX leds  only light  when computer  usb
+connection is  plugged into  the arduino  and there  is output  to the
+serial port.
+
+
+Wired  the following  circuit  and checked  wiring  three times.   All
+signals were connected  irrespective if example code  used the signals
+or not, just to make testing with multiple various sketches easier.
+
+https://blog.zakkemble.net/wp-content/uploads/2013/01/nrf905_bb-1.png
+
+Using library version 4.0.2, checked in arduino IDE.
+
+lowpwr_node_sensor.ino:
+
+* was loaded into TX labeled circuit setup(mounted on blue backplate)
+
+* serial monitor output showed: (can't  cut and paste from arduino ide
+  so  see lowpwr_node_sensor.ino.TX.output.png)  ie starting  messages
+  seen and looping with analog and digital outputs showing values.
+
+
+
+lowpwr_node_baseStation.ino
+
+* was loaded into RX labeled circuit setup(mounted on blue backplate)
+
+* serial monitor output showed
+  lowpwr_node_baseStation.ino.RX.output.png, and did not continue to
+  loop.
+

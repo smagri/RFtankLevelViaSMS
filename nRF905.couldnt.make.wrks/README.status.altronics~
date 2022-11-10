@@ -1,0 +1,13 @@
+12apr2022
+
+* installed altronics library into arduino ide and copied original examples to
+  dataTX.altronics.sjm.ino and dataRX.altronics.sjm.ino.
+
+* I could not even get these scripts to compile properly.
+
+* Also,  the wiring  diagram is  not  given, I  was going  to use  zak
+  kembles wiring diagram  and change the pin numbers  in the altronics
+  example .h  file but this is  all looking like too  much work again.
+  Going  back to  zak kemble's  code as  this looks  like the  arduino
+  officially supported code.
+  

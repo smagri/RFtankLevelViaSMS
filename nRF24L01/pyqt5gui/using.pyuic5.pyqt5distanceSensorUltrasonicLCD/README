@@ -1,0 +1,8 @@
+14mar2022
+
+Created this with  'designer'. Not 'qtcreator' user  interface, ie .ui
+file creation tool.  Using the program pyuic5 to convert the qtcreator
+version did not  work properly as seen here.  I  didn't really want to
+learn a  knew tool  like designer just  yet and was  hard to  work out
+pyuic5  error   quickly  so   I  resorted   to  manually   coding  the
+waterControlSystem GUI, seen in pyqt5gui/ directory.

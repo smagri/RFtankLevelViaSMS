@@ -1,0 +1,16 @@
+#include "distancesensorultrasoniclcd.h"
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+  QApplication a(argc, argv);
+  distanceSensorUltrasonicLCD w;
+  std::cerr << "before show" << endl;
+
+  w.show();
+
+
+  std::cerr  << "after show" << endl;
+
+  return a.exec();
+}

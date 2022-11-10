@@ -1,0 +1,5 @@
+output when you try and send 101 integer as a String
+
+[16:56:31:383] B<0x81>~<break>
+[16:56:31:910] <0xff><0x06>!<0x06><0x03><break>
+[16:56:31:910] <0x03><break>

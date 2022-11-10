@@ -1,0 +1,15 @@
+30sep2022
+
+Howto program the esp8266 on the jaycar wifi board:
+
+* read 2 datasheets in docs directory
+
+* the setting up preferences datasheet shows how you need to setup for
+  programming any esp8266 though also,  under Arduino Setup.  If using
+  the onboard flash  like the wifi controlled  jaycar makerhub project
+  does you need to follow instructions in this pdf also.
+
+* If your  not using  the XC3802  esp8266 board  you can  ignore those
+  instructions.  And  your just using  the esp8266 on the  jaycar wifi
+  board.
+

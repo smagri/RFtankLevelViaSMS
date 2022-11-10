@@ -1,0 +1,10 @@
+6aug2022
+
+Needed to run devPermission script for being able to program arduino uno wifi rev2.
+
+I get a warning though when you program it saying this will result in
+an error in future versions so may not work long term.  You can avoid
+worrying about the warning for now though.
+
+It just adds a udev rule for arduino uno wifi rev2 in
+/etc/udev/rules./99-arduino-uno-wifi-rev2.rules

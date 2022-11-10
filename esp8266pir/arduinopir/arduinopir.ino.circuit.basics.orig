@@ -1,0 +1,20 @@
+#include "SerialTransfer.h"
+
+SerialTransfer myTransfer;
+int status;
+
+void setup()
+{
+  Serial.begin(115200);
+  myTransfer.begin(Serial);
+  pinMode(5, INPUT);
+}
+
+void loop()
+{
+  status = digitalRead(5);
+  myTransfer.txObj(status, sizeof(status));
+  myTransfer.sendData(sizeof(status));
+  //delay(100);
+	delay(10000);
+}

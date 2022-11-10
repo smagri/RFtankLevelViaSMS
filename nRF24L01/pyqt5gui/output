@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "./main.py", line 11, in <module>
+    import dsuLCDpyqt5
+  File "/home/smagri/proj/waterControlSystem/pyqt5version/dsuLCDpyqt5.py", line 24, in <module>
+    class dsuLCDpyqt5():
+  File "/home/smagri/proj/waterControlSystem/pyqt5version/dsuLCDpyqt5.py", line 27, in dsuLCDpyqt5
+    serialPort = serial(self)
+NameError: name 'self' is not defined

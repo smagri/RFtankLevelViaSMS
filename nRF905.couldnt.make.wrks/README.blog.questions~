@@ -1,0 +1,11 @@
+7apr2022
+I am trying to use lowpwr_node_baseStation.ino with lowpwr_node_sensor.ino from the current IDE example sketches  that use library 4.0.2.  I seem to be able to transmit data with lowpwr_node_sensor.ino  but I am not receiving any data at lowpwr_node_baseStation.ino,  I only get the following output and then no more transmissions, the TX light on the transmitting arduino is on and the serial output looks correct and wiring has been checked many times at both ends. Could anyone tell me if they have the examples working and perhaps what is wrong for me?
+
+Base station starting...
+Base station started
+Woke for no reason?
+Totals:
+ Good    0
+ Invalid 0
+ Bad     0
+------

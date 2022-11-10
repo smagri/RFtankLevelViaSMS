@@ -1,0 +1,8 @@
+21apr2022
+
+nRF905-arduino-master.zip is the latest library to date, version 4.0.2
+used  from the  arduino  library manager.   With  arduino ide  version
+1.8.15.
+
+There is no change in examples from the old library nRF905-arduino.zip
+to this new 4.0.2 one nRF905-arduino-master.zip.

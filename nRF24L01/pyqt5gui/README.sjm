@@ -1,0 +1,42 @@
+5apr2022
+
+I implemented  using QLineEdit()  for getting the  port name  from the
+user from a  text box, can still  use the command like  instead if you
+like.
+
+This was implemented with proper python classes using self. I think it
+is the proper way as thegreatcourses.com uses this method.
+
+However, this version has not been test with the actual hardaware as
+firstPassNotProperClasses/ version, so may still need to be fine
+tuned. Appears to work with a test on the command line though.
+
+Also, this is a good example of a basic pyqt5 GUI.
+
+------------------------------------------------------------------------------------
+
+14mar2022
+
+Could not easily  work out howto get  the input from the  Text box for
+the name  of the serial  port, so I implemented  it as a  command line
+argument for now.   Perhaps I need to use TextLineEdit().   And I need
+to fix the class I think, google around again.
+
+Perhaps need to experiment with combo box, see inline code for a start.
+
+Web  pages used/read  to create  code should  be saved  in Evernote  I
+think, otherwise google  again as I didn't save them  here.  Have been
+trying to use Evernote  more but maybe this was a  wrong choise in the
+end as it locks me in to them.  I could export the clipped addless web
+pages, the strength  and why I use evernote, but  I think sometimes it
+doesn't export them properly and saving the web pages with adds on the
+hard drive results  in unreadable pdf's anyhow.  However,  I think the
+plan was to use evernote for note taking at uni.
+
+see: Paul McWhorder video:
+Using an Arduino with Python lesson 3:
+      * println() addes \r\n, ie CR and LF to end of data line.
+      * could deal with this via, try this in dsuLCDpyqt5.py at some point:
+
+readDataStr = str(readDataStr, 'utf-8')
+readDataStr = readDatastr.strip('\r\n')

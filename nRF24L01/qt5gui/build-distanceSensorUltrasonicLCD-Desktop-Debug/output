@@ -1,0 +1,405 @@
+before show
+after show
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 9
+9dbg: readSP: read() success, readChar = 7
+7dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 0
+0dbg: readSP: read() success, readChar = 9
+9dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 8
+8dbg: readSP: read() success, readChar = 8
+8dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 0
+0dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 7
+7dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 7
+7dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 8
+8dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 6
+6dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 4
+4dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 7
+7dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 4
+4dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 4
+4dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 4
+4dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 8
+8dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 7
+7dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 8
+8dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 8
+8dbg: readSP: read() success, readChar = 4
+4dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 6
+6dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 8
+8dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 4
+4dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 6
+6dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 9
+9dbg: readSP: read() success, readChar = 4
+4dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 5
+5dbg: readSP: read() success, readChar = 4
+4dbg: readSP: read() success, readChar = 9
+9dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 2
+2dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 0
+0dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 3
+3dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+readSerialPort: successfully opened device = /dev/ttyUSB0
+dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 1
+1dbg: readSP: read() success, readChar = 
+dbg: readSP: read() success, readChar = 
+
+
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered
+timerCbk: entered
+readSerialport: entered

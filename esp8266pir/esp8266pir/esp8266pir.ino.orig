@@ -1,0 +1,53 @@
+#include <ESP8266WiFi.h> 
+#include "SerialTransfer.h"
+
+SerialTransfer myTransfer;
+
+const char* ssid     = "Wifi Name";
+const char* password = "WiFi Password";
+
+const char* resource = "https://maker.ifttt.com/trigger/YOUR EVENT NAME HERE/with/key/YOUR KEY HERE";
+const char* server = "maker.ifttt.com";
+
+void setup() {
+Serial.begin(115200);
+pinMode(D5, INPUT);
+
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+  }
+
+  myTransfer.begin(Serial);
+}
+
+void loop() 
+{
+  if(myTransfer.available())
+  {
+    int status;  
+    myTransfer.rxObj(myFloat, sizeof(myFloat));
+    if (status==1)
+    {
+        WiFiClient client;
+        client.print(String("GET ") + resource + 
+                        " HTTP/1.1\r\n" +
+                        "Host: " + server + "\r\n" + 
+                        "Connection: close\r\n\r\n");
+                    
+        int timeout = 5 * 10; // 5 seconds             
+        while(!!!client.available() && (timeout-- > 0))
+        {
+        delay(100);
+        }
+        while(client.available())
+        {
+        Serial.write(client.read());
+        }
+        client.stop();
+        delay(10000);
+    }      
+  } 
+}  
